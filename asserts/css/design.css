@@ -1,0 +1,2595 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  /* background-color: whitesmoke; */
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ---- Announcment-bar css ---- */
+
+.announcment-bar {
+  background: linear-gradient(to right, #80b500 0%, #ffffff 100%);
+  display: flex;
+  justify-content: center;
+  padding: 0.3rem;
+}
+
+.announcment-bar-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count-down {
+  display: flex;
+  margin-left: 5px;
+}
+
+.single-countdown {
+  line-height: 1rem;
+  /* margin-left: 1rem; */
+  background: #80b500;
+  height: 45px;
+  width: 50px;
+  border-radius: 5px;
+  margin: 0 3px;
+  justify-items: center;
+}
+.single-countdown > h5 {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+.single-countdown > span {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+p a.notification-button {
+  background-color: #e53e29;
+  border-radius: 3px;
+  border-color: #e53e29;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  height: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-left: -10px;
+  padding: 0.5px 20px;
+  transition: 0.3s;
+}
+a.notification-button:hover {
+  background-color: black;
+}
+.notification-button {
+  border: none;
+  background-color: transparent;
+  color: #e53e29;
+  font-size: 35px;
+  position: relative;
+  right: -25%;
+}
+
+/* ---- Header css ---- */
+
+a {
+  text-decoration: none;
+  color: #071c1f;
+}
+.header-section {
+  align-items: center;
+}
+/* ------Header part one css  */
+.header-part-one {
+  display: flex;
+  font-size: 14px;
+  padding: 2px 55px;
+  /* padding: 0.8rem; */
+  /* margin: 0 60px; */
+  /* background: #F5F5F5; */
+  background: whitesmoke;
+  border-bottom: 1px solid;
+  border-color: #e5eaee;
+}
+.header-scoial {
+  /* width: 50%; */
+  color: black;
+  padding: 10px;
+  /* margin: 0 20px; */
+}
+.header-scoial > ul {
+  padding: 0;
+  margin: 0;
+}
+ul > li {
+  display: inline-block;
+}
+.header-scoial > ul > li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 30px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+.header-scoial > ul > li > a > i,
+.header-scoial > ul > li > i {
+  margin-right: 3px;
+  color: #80b500;
+}
+.lng-part {
+  position: absolute;
+  right: 0%;
+  padding: 10px;
+  margin: 0 7%;
+  text-align: right;
+}
+.list {
+  text-align: right;
+  margin-right: 23px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.list-item {
+  display: none;
+  position: absolute;
+  background: white;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #e5eaee;
+  text-align: left;
+  /* right: 0px; */
+  width: 110px;
+  z-index: 99;
+}
+.list:hover .list-item {
+  display: block;
+  transition: 4s;
+}
+.list-item > a {
+  text-decoration: none;
+  color: black;
+  background: white;
+  display: block;
+  padding: 10px 0;
+}
+.list-item a:hover {
+  color: #80b500;
+}
+li {
+  cursor: pointer;
+  list-style: none;
+}
+.social-media-list ul li {
+  display: inline-block;
+  gap: 5px;
+  margin: 0 7px;
+  font-size: 15px;
+}
+.social-media-list ul li .fab:hover {
+  color: #80b500;
+}
+/* ------Header part one css end ------*/
+
+/* ------Header part two css  ------*/
+
+/* .main-header{
+    flex-grow: 1;
+    position: static;
+    position: inherit;
+    flex-basis: 0;
+    max-width: 100%;
+} */
+.main-header {
+  display: flex;
+  padding: 22px 62px;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  background: whitesmoke;
+}
+
+.navbar {
+  padding: 0 12px;
+}
+.main-menu > ul {
+  display: flex;
+  padding: 0;
+  margin-bottom: 16px;
+  /* margin-left: -150px; */
+  list-style: none;
+  align-items: center;
+}
+.main-menu > ul > li {
+  /* display: inline-block; */
+  position: relative;
+  margin-right: 20px;
+  font-weight: 700;
+}
+.main-menu li > ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: whitesmoke;
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+  /* border-radius: 5px; */
+  transition: all 0.3s ease-in-ou;
+  display: none;
+  min-width: 174px;
+  line-height: 2;
+  padding: 10px 0;
+  font-size: 14px;
+  z-index: 1;
+  /* text-align: left; */
+}
+.main-menu li:hover > ul {
+  display: block;
+}
+.home-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* display: none;
+    position: absolute;
+    z-index: 999;
+    width: 170px; */
+  /* text-align: left; */
+}
+.home-list li {
+  padding: 10px 20px;
+}
+.home-list li a {
+  text-decoration: none;
+  color: gray;
+  background: whitesmoke;
+  display: block;
+  transition: 0.3s;
+  /* width: 170px;
+    padding: 15px 20px;
+    text-align: left; */
+}
+
+.menu-icon > a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  /* padding: 10px 15px; */
+  display: inline-block;
+}
+.menu-icon:hover .home-list {
+  /* display: inline-block; */
+  display: block;
+  border-top: 3px solid #80b500;
+}
+.home-list li a:hover {
+  color: #80b500;
+  /* background-color: rgba(128, 181, 0, 0.1); */
+}
+.menu-icon:hover > a {
+  color: #80b500;
+}
+
+.header-option {
+  display: flex;
+  /* flex-grow: 1; */
+  position: static;
+  margin-right: 15px;
+  margin-left: 30px;
+}
+.header-option > div {
+  margin-left: 20px;
+  margin-right: 0;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  transform: all 0.3s ease 0s;
+  background: white;
+  color: black;
+}
+.header-option > div :hover {
+  color: #80b500;
+}
+/* ------Header part two css end ------ */
+/* ------Header end ------*/
+
+/* ------Slider start ------ */
+.slider {
+  font-family: "Rajdhani";
+  position: relative;
+  padding: 100px 0;
+  margin: 0 20px;
+  background: white;
+  height: 100vh;
+}
+
+.slick-slider .slick-dots {
+  width: 100%;
+  bottom: 10%;
+}
+.slick-slider .slick-dots li button::before {
+  font-size: 12px;
+  color: black;
+}
+.slick-slider .slick-dots li {
+  margin: 0 3px;
+}
+.slick-slider .slick-dots li.slick-active button::before {
+  color: #80b500;
+}
+.slick-slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  display: block;
+  z-index: 9;
+  transform: translate(0, -50%);
+  cursor: pointer;
+}
+
+
+.slick-slider .slick-arrow.prev {
+  left: 0;
+}
+.slick-slider .slick-arrow.next {
+  right: 0;
+}
+.slider4 .slick-arrow.prev{
+  left: -5.5%;
+}
+.slider2 .slick-arrow.prev{
+  left: -5.5%;
+}
+.slider4 .slick-arrow.next{
+  right: -5.5%;
+}
+.slider2 .slick-arrow.next{
+  left: 101%;
+}
+.slider2 .slick-arrow span, .slider3 .slick-arrow span,.slider4 .slick-arrow span{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  background: whitesmoke;
+}
+.slick-slider .slick-arrow span {
+  color: gray;
+  background: whitesmoke;
+  font-size: 25px;
+  padding: 10px 10px 10px 10px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  display: none;
+}
+.slider:hover .slick-arrow span,.slider3:hover  .slick-arrow span, .blog-ltn:hover .slick-arrow span, .featured-product:hover .slick-arrow span {
+  display: block;
+  border: 1px solid #e5e5e5;
+  transition: all 0.5s ease-in-out;
+}
+.slick-slider .slick-arrow span:hover {
+  background: #80b500;
+  color: white;
+  display: block;
+  transition: all 0.3s;
+}
+
+.slide-item {
+  height: 100%;
+  background: white;
+}
+.slide-item-info {
+  width: 43%;
+  padding-left: 27px;
+}
+.slide-item-img {
+  display: block;
+  width: 57%;
+}
+.slide-left {
+  display: flex;
+  padding-left: 40px;
+}
+.slide-subtitle {
+  font-size: 15px;
+  font-style: italic;
+  color: #80b500;
+  padding-bottom: 30px;
+  align-items: center;
+}
+.slide-title {
+  color: black;
+  font-size: 40px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.shop-btn {
+  border: 1px solid #80b500;
+  background: #80b500;
+  max-width: 150px;
+  width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+  color: white;
+  padding: 17px 0px;
+}
+
+.slide-left img {
+  width: 110%;
+  max-width: 90%;
+  height: 100%;
+  justify-content: left;
+}
+
+.slide-right {
+  margin: 0 62.5px;
+  padding: 0 12px;
+  display: flex;
+}
+
+.slide-item-img {
+  width: 55%;
+}
+.slide-right img {
+  width: 100%;
+  max-width: 73%;
+  height: 100%;
+}
+.slide-item .slide-right {
+  text-align: right;
+}
+.btnLearn {
+  border: 1px solid gray;
+  background: white;
+  max-width: 143px;
+  width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 17px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  position: relative;
+  z-index: 1;
+  color: black;
+  margin-left: 15px;
+}
+.shop-btn:hover {
+  color: #80b500;
+  background: white;
+}
+.btnLearn:hover {
+  color: white;
+  background: #071c1f;
+}
+.slide-right .slide-brief p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-bottom: 23px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ------Slider end ------ */
+
+/* ------banner start ------ */
+
+.banner {
+  height: 100vh;
+  display: flex;
+  padding: 0 12px;
+  margin: 62.3px;
+}
+.banner-img {
+  position: relative;
+  padding: 0 12px;
+  margin-bottom: 30px;
+}
+.banner-img .image-container {
+  width: 546px;
+  height: 532px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.banner-img .image-position-size {
+  width: 546px;
+  height: 248px;
+  object-fit: cover;
+}
+
+.banner-img .image-position-wrapper {
+  overflow: hidden;
+  display: inline-block;
+}
+.banner-img .image-position-wrapper img {
+  transition: 3s;
+}
+.banner-img .image-position-wrapper img:hover {
+  transform: scale(1.08);
+}
+
+/* ------banner  end ------ */
+
+/* ------product start ------ */
+
+.product {
+  margin: 0 62px;
+  padding: 0 20px;
+}
+.title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.section-title {
+  margin-bottom: 5px;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Rajdhani";
+}
+.ltn-menu {
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.ltn-menu .nav {
+  display: flex;
+  justify-content: space-around;
+}
+.ltn-menu .nav .active {
+  border-bottom: 2px solid #80b500;
+  padding-bottom: 10px;
+  color: #80b500;
+}
+.ltn-menu .nav .show {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tab-content {
+  gap: 24px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ltn-product-item {
+  display: block;
+  text-align: center;
+  border: 2px solid whitesmoke;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  width: 23% !important;
+  display: none;
+}
+.ltn-product-item.active {
+  display: block;
+}
+
+.product-img {
+  text-align: center;
+  position: relative;
+}
+.product-img .img-size {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+.product-info .product-ratting {
+  color: gold;
+  font-weight: 700;
+}
+.product-info .product-title {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+.product-info .product-title a {
+  font-family: "Rajdhani";
+  color: black;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-info .product-title a:hover {
+  color: #80b500;
+}
+.money {
+  color: #80b500;
+  font-size: 21px;
+  font-weight: 650;
+  outline: none;
+}
+.product-info {
+  padding: 20px;
+}
+
+.product-info .product-price del {
+  font-size: 20px;
+  opacity: 0.6;
+  color: #80b500;
+}
+.ltn-product-item:hover {
+  box-shadow: 1px 1px 1px 1px gray;
+  display: block;
+}
+.ltn-product-item .product-img .product-hover-action {
+  position: absolute;
+  top: 80%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  width: 100%;       
+  height: 100%;      
+  display: flex;     
+  justify-content: center; 
+  align-items: center;
+}
+.product-hover-action ul {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  display: none;
+}
+.product-hover-action ul li {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: whitesmoke;
+  border: none;
+  box-shadow: 0px 1px 6px 0px rgba(32, 33, 36, .28);
+}
+.ltn-product-item:hover .product-hover-action ul {
+  display: block;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-50%);
+}
+.product-hover-action ul li:hover {
+  background-color: #80b500;
+  color: white;
+}
+.product-hover-action ul li a {
+  color: black;
+}
+.product-hover-action:hover {
+  color: white;
+  transition: none;
+}
+/* ------product end ------ */
+
+/* ------counter2 start ------ */
+
+.countdown-2 {
+  
+  background: #f7f5eb;
+  position: relative;
+  z-index: 99;
+  /* margin: 0 52px; */
+  /* padding: 0 12px; */
+  /* height: 100vh; */
+}
+.ctd-inner {
+    padding-top: 110px;
+  padding-bottom: 120px;
+  text-align: center;
+}
+.ltn-secondery-color {
+  color: #80b500;
+  font-style: italic;
+  font-family: "Rajdhani";
+  font-size: 2rem;
+}
+.h1 {
+  font-family: "Rajdhani";
+  color: black;
+  font-size: 50px;
+  padding-bottom: 20px;
+  
+}
+.product-countdown {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 25px 40px 5px;
+  margin-bottom: 50px;
+
+}
+.counter{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Rajdhani';
+    transition: all .2s;
+    font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.product-single-countdown span{
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+.img1{
+    position: absolute;
+    top: 15%;
+    width: 34%;
+}
+.img2{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 30%;
+}
+.img2 .img-position .img-size{
+    transition: none;
+    transform: none;
+    height: 450px;
+}
+/* ------counter2 end ------ */
+
+/* ------featured-product start ------ */
+.slider2 .ltn-product-item{
+  width: 0.39%!important;
+  height: 8%!important;
+  margin: 0 20px;
+}
+.slider2 .ltn-product-item .product-img img{
+  width: 100%;
+  height: auto;
+}
+.slider2 .slick-prev::before, .slider2 .slick-next::before{
+  color: gray;
+  font-size: 25px;
+}
+.slider2 .slick-prev{
+  left: -30px;
+}
+.slider2 .slick-dots{
+  display: none!important;
+}
+.slider2 .slick-active{
+  height: 2%;
+}
+.featured-product{
+  padding: 50px 70.33px;
+}
+.slider2 .product-info .product-title a{
+  font-size: 22px;
+}
+
+/* ------video start ------ */
+
+.video-area{
+  padding: 20px 12px 50px 12px;
+  margin: 0 62.33px;
+}
+.video-bgimg{
+  background: url(../img/8.webp);
+  height: 600px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+  position: relative;
+}
+.video{
+  outline-offset: 15px;
+  outline:4px solid whitesmoke;
+  margin: 20px;
+  height: 80px;
+  width: 80px;
+  background-color: #f7f5eb;
+  color: #80b500;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 9;
+}
+.video:hover{
+  outline: 4px solid #80b500;
+}
+
+/* ------video end ------ */
+
+/* ------client feedback start ------ */
+.client-feedback{
+  padding: 100px 12px;
+  background: whitesmoke;
+}
+.title h6{
+  color: #80b500;
+  font-family: 'Rajdhani';
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.feedback-user{
+  max-width: 3%;
+  width: 100%;
+  position: relative;
+  padding: 40px 25px;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px gray;
+  z-index: 2;
+  gap: 30px;
+  display: flex;
+  min-height: 1px;
+  height: 100%;
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+.feedback-user .client-img img{
+  float: left;
+  max-width: 160px;
+  width: 100%;
+  padding-right: 20px;
+}
+.feedback-user p{
+  margin-bottom: 1rem;
+}
+.feedback-user h4{
+  font-size: 20px;
+  font-family: 'Rajdhani';
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.feedback-user h6{
+  font-family: 'Rajdhani';
+  color: #80b500;
+  font-size: 1rem;
+}
+.feedback-user .bg-icon{
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
+  opacity: .1;
+  z-index: -1;
+  
+}
+.bg-icon i{
+  font-size: 100px;
+  color: gray;
+  line-height: 1;
+}
+.slider3{
+  padding: 0 12px;
+  position: relative;
+  width: 100%;
+}
+.slider3 .slick-dots{
+  bottom: -30%;
+}
+
+/* ------client feedback end ------ */
+
+
+/* ------blog start ------ */
+.blog-ltn{
+  padding: 90px 74.33px 100px 74.33px;
+  /* padding: 0px 12px; */
+}
+.blog-item{
+  font-family: 'Rajdhani';
+  border: 1px solid #e5eaee;
+  box-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
+  width: 1.1%;
+  margin: 0 35px;
+}
+.slider4 img{
+  width: 100%;
+  height: 100%;
+}
+.blog-img{
+  height: 100%;
+  width: 100%;
+  overflow:hidden ;
+}
+.blog-img .img-postion img{
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+.blog-item:hover img{
+  transform: scale(1.1);
+}
+.blog-brief .user .blog-author{
+  color: black;
+  text-decoration: none;
+}
+.user .blog-author:hover{
+  color: #80b500;
+}
+.user .blog-author .fa{
+  color: #80b500;
+}
+.blog-title a{
+  font-size: 23px;
+  text-decoration: none;
+  color: black;
+
+}
+.blog-brief .blog-title{
+  /* padding-top: 10px; */
+  padding-bottom: 10px;
+  line-height: 1.5;
+
+}
+.blog-title:hover a{
+  color: #80b500;
+}
+.blog-meta-btn{
+  border-top: 1px solid #e5eaee;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  
+}
+.blog-meta-btn .blog-date{
+  color: black;
+}
+.blog-date i{
+  color: #80b500;
+}
+.blog-meta-btn a{
+  color: #80b500;
+  text-decoration: none;
+}
+.blog-brief{
+  padding: 20px 20px 0 20px;
+}
+.slider4 .slick-prev, .slider4 .slick-next{
+  display: none!important;
+}
+.slider4 .slick-dots{
+  display: none!important;
+}
+/* ------blog end ------ */
+
+/* ------feature-area start ------ */
+.feature-area{
+  margin: 0 30px;
+  display: flex;
+}
+.feature-item{
+  width: 25%;
+  border-right: 1px solid #e5eaee;
+  box-shadow: 0 16px 32px 0 rgba(7, 28, 31, 0.1);
+  background: whitesmoke;
+  padding: 40px 27px 15px 27px;
+  display: flex;
+}
+.feature-item .feature-img{
+  font-size: 40px;
+  width: 50px;
+  line-height: 1;
+}
+.feature-item .feature-img img{
+  width: 100%;
+  vertical-align: middle;
+}
+.feature-info{
+  padding-left: 10px;
+}
+.feature-info h4{
+  font-family: 'Rajdhani';
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.feature-info p{
+  line-height: 1.5;
+}
+
+/* ------feature-area end ------ */
+/* ------footer start ------ */
+
+.footer-top {
+  background: whitesmoke;
+  padding: 90px 32px 10px 32px; 
+  display: flex;
+  flex-wrap: nowrap; /* Prevent columns from wrapping to the next line */
+  justify-content: space-between; /* Distribute space between columns */
+}
+.col{
+  width: 25%;
+  max-width: 100%;
+  margin-bottom: 60px;
+  padding: 0 12px;
+}
+.col2{
+  width: 16.66%;
+  padding-right: calc(var(--bs-gutter-x)* .1);
+    padding-left: calc(var(--bs-gutter-x)* .1);
+}
+.col3{
+  width: 25%;
+}
+.logo{
+  position: relative;
+  top: -10px;
+}
+.footer-top p{
+  color: black;
+  margin-bottom: 15px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+.footer-address{
+  list-style: none;
+  display: block;
+  margin-top: 8px;
+}
+.footer-address ul{
+  padding: 0;
+  margin: 0;
+}
+.footer-address ul li{
+  list-style: none;
+  /* display: block; */
+  display: flex;
+  margin-top: 8px;
+}
+.footer-address ul li i{
+  float: left;
+  margin-right: 15px;
+  margin-top: 6px;
+
+}
+.footer-address ul li .footer-info{
+  overflow: hidden;
+}
+
+.footer-title{
+  font-size: 22px;
+  font-family: 'rajdhani';
+  margin-bottom: 25px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.footer-menu ul li{
+  display: flex;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 18px;
+  position: relative;
+}
+.footer-menu ul li a{
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.footer-menu ul li a:hover{
+  font-size: 17px;
+  color: #80b500;
+  transition: all 0.2s;
+}
+.col .footer-news-letter{
+  position: relative;
+  margin-bottom: 50px;
+  /* padding: 0 40px 0 20px; */
+}
+input[type=email],textarea {
+  background: #ffffff;
+  border: 2px solid;
+  border-color: #e5eaee;
+  height: 60px;
+  box-shadow: none;
+  padding-left: 20px;
+  font-size: 16px;
+  color: black;
+  width: 60%;
+  padding-right: 60px;
+}
+input[type=password],input[type=text],input[type=email],input[type=submit]{
+  border: 2px solid #e5e5e5;
+    height: 65px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #071c1f;
+    width: 88%;
+    margin-bottom: 30px;
+    padding-right: 40px;
+}
+.footer-news-letter .btn-news-letter{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  height: 100%;
+
+}
+.footer-news-letter .btn-news-letter .btn{
+  width: 50px;
+  height: 100%;
+  background: #80b500;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-news-letter .btn:hover{
+  background: #071c1f;
+}
+.btn-news-letter .btn i {
+  font-size: 18px; /* adjust as you like */
+}
+.col h5{
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: 'Rajdhani';
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2
+}
+.img-pos .img-pay{
+  vertical-align: middle;
+  width: 100%;
+  /* border-style: none; */
+}
+.footer-copyright{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 15px;
+  background: #071c1f;
+  color: #ffffff;
+  align-items:center ;
+}
+
+
+.copyright-menu ul li{
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 15px;
+  font-family: 'Rajdhani';
+}
+.copyright-menu ul li a{
+  text-decoration: none;
+  color: white;
+}
+.copyright-menu ul li a:hover{
+  color: #80b500;
+}
+.copyright-menu ul{
+  margin: 0;
+  padding: 0;
+}
+
+/* ------footer end ------ */
+
+.scrollup{
+  background: whitesmoke;
+    color: black;
+    bottom: 70px;
+    font-size: 20px;
+    font-weight: 800;
+    height: 40px;
+    width: 40px;
+    right: 3%;
+    text-align: center;
+    transform: rotate(45deg);
+    transition: all 0.3s ease 0s;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+.scrollup:hover{
+  background: #80b500;
+  color: white;
+}
+.scrollup i{
+  line-height: 40px;
+  transform: rotate(-45deg);
+}
+/* ------footer end ------ */
+
+/* -----------------------------index page end----------------------- */
+
+
+
+.mobile-head-menu{
+  right: auto;
+    left: -480px;
+    padding: 50px 40px;
+    position: fixed;
+    top: 0;
+    display: block;
+    overflow: hidden;
+    width: 400px;
+    height: 100vh;
+    transition: all .5s ease 0s;
+    background: whitesmoke;
+    z-index: 9999;
+    box-shadow: none;
+}
+.mobile-menu-inner{
+  position: relative;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    touch-action: auto;
+    overflow-x: hidden!important;
+    padding-right: 20px;
+    overflow-y: auto;
+  
+}
+.inner-menu-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #eee;
+}
+.inner-menu-head .close-button{
+  background: transparent;
+    font-size: 30px;
+    padding: 0 15px;
+    border: none;
+}
+.mobile-menu-search-form{
+  margin-bottom: 30px;
+    position: relative;
+}
+predictive-search{
+  position: relative;
+}
+input[type=search]{
+  background: whitesmoke;
+  border: 2px solid #e5e5e5;
+  height: 65px;
+  box-shadow: none;
+  padding-left: 20px;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+  padding-right: 40px;
+}
+.mobile-menu-search-form button{
+  background: transparent;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  padding: 0 15px;
+}
+.mobile-menu>ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.mobile-menu>ul>li{
+  position: relative;
+
+}
+.mobile-menu>ul>li>a{
+  display: block;
+    padding: 8px 24px 8px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+.mobile-btn{
+  border-top: 2px solid #e5e5e5;
+    padding: 15px 0 0 0;
+    margin: 30px 0;
+    border-bottom: 2px solid #e5e5e5;
+}
+.mobile-btn ul{
+  padding: 0;
+    margin: 0;
+}
+.mobile-btn ul li{
+  display: block;
+    padding-bottom: 15px;
+}
+.mobile-btn ul li a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.mobile-btn .mobile-btn-icon{
+  width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border: 2px solid #e5e5e5;
+    text-align: center;
+    margin-right: 10px;
+}
+.mobile-btn-icon{
+  text-align: center;
+
+}
+.mobile-menu-inner .social-media-list ul{
+  display: flex;
+
+}
+.mobile-menu-inner .social-media-list ul li{
+  height: 40px;
+    background: #e5e5e5;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    border: 2px solid #e5e5e5;
+}
+.mobile-head-menu{
+  transition: left 1s ease 0s;
+
+}
+@media (max-width: 1024px) {
+  .header-part-one, .main-header {
+    padding: 10px;
+  }
+  
+}
+
+
+
+
+
+/* ----------------------------shop page html start-------------------- */
+
+
+/* ------background image css start----- */
+.productbg{
+  background: url(../img/theme/1.jpg) no-repeat scroll center center / cover;
+  padding-top: 170px;
+  padding-bottom: 190px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 120px;
+}
+.bg{
+  background: #071c1f;
+  position: absolute;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  top: 0;
+
+}
+.productbg-inner{
+  display: flex;
+  padding-top: 11%;
+  padding-left:74.33px;
+  padding-right: 74.33px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+.productbg-inner .title h1{
+  color: white;
+  font-size: 55px;
+}
+.productbg-inner .title h6{
+  margin-left: -40px;
+}
+.productbg-list{
+  display: flex;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.productbg-list li a {
+  color: white;
+}
+.productbg-list li span{
+  color: #80b500;
+}
+/* ------background image css end----- */
+
+/* ------products shop css start----- */
+/* ------sidebar css start----- */
+.store-product-area{
+  padding: 0 12px 100px 12px;
+  margin: 0 62.33px;
+}
+.store-product-inner{
+  display: flex;
+}
+.shop-sidebar{
+  padding: 0 12px;
+  width: 25%;
+  /* display: block; */
+}
+.menu-widget{
+  padding: 15px;
+  margin-bottom: 40px;
+  border: 2px solid #e5e5e5;
+  
+}
+ .widget-title{
+  font-size: 19px;
+  position: relative;
+  padding-left: 15px;
+  font-family:'Rajdhani';
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.widget-title span{
+  color: #80b500;
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.widget-collapse-hide{
+  padding-top: 15px;
+}
+.widget-collapse-hide ul{
+  display: flex;
+  flex-direction: column;
+}
+.widget-collapse-hide ul li{
+  margin-bottom: 15px;
+  list-style: none;
+}
+.widget-collapse-hide .filter-checkbox{
+  color: black;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+}
+.filter-checkbox input[type=checkbox]{
+  height: 17px;
+  width: 17px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-right: 8px;
+  display: inline-block;
+  background-color: gray;
+  border-radius: 0;
+}
+.filter-checkbox .filter-value-lable span{
+  color: gray;
+}
+.price-menu-widget .price-fliter{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+.filter-rang-from , .filter-rang-to label{
+  color: gray;
+  font-size: 14px;
+  /* display: block; */
+}
+.price-fliter input{
+  width: 100px;
+  padding: 10px;
+  font-weight: 700;
+  border: 1px solid #e5e5e5;
+  height: 25px;
+}
+ 
+ .theme-btn{
+  background: #80b500;
+  color: white;
+  border: 1px solid #80b500;
+  padding: 10px 25px;
+  /* width: 100px; */
+  height: 25px;
+  text-align: center;
+  font-family: 'Rajdhani';
+}
+.theme-btn:hover{
+  background: white;
+  color: #071c1f;
+  border: 1px solid #071c1f;
+
+}
+.slideDown{
+  display: none;  
+  transition: all 0.2s ease-in-out;
+}
+
+/* ------sidebar css end----- */
+
+/* ------product shop start------ */
+
+.shop-product{
+  width: 75%;
+  /* background: #80b500; */
+  padding: 0 12px;
+}
+.shop-option{
+  margin-bottom: 40px;
+}
+.shop-option ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shop-option ul li{
+  list-style: none;
+  line-height: 50px;
+}
+
+.tab-menu .active{
+  color: #80b500;
+}
+.tab-menu a{
+  font-size: 30px;
+  margin-right: 20px;
+  color: #071c1f;
+}
+.shop-option .drop-down .drop-selection{
+  border: 2px solid #ededed;
+  border-radius: 0;
+  height: 50px;
+  line-height: 46px;
+  min-width: 190px;
+  background: #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left!important;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  width: auto;
+}
+.show-product-num span{
+  text-align: right;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'Rajdhani';
+}
+.show-tab .tab-content2 {
+  display: none;
+}
+.show-tab .tab-content2.active {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  row-gap: 50px;
+}
+ 
+.tab-content2 .ltn-product-item{
+  display: block;
+  width: 30%!important;
+}
+
+.product-list-view .ltn-product-item .product-img{
+  width: 45%;
+  float: left;
+}
+
+.product-list-view .ltn-product-item{
+  width: 100%!important;
+}
+.product-list-view .ltn-product-item .product-info{
+  overflow: hidden;
+  padding: 25px 25px 20px 30px;
+  text-align: left;
+}
+#grid-column .product-info .product-title{
+  font-size: 22px;
+}
+.product-list-view .ltn-product-item{
+  height: 100%;
+}
+.product-list-view .product-info .product-price{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.product-list-view .product-info .product-title{
+  margin-bottom: 10px;
+}
+.product-info p{
+  font-size: 17px;
+  line-height: 1.5;
+}
+.product-list-view .product-info .product-hover-action ul {
+  transform: none;
+  display: flex;
+  justify-content: start;
+  margin-top: 12px;
+  gap: 10px;
+}
+
+
+/* ------product shop end------ */
+
+.pagination-area{
+  padding-top: 60px;
+  text-align: center;
+}
+.pagination-area ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+.pagination-area ul li a{
+  height: 50px;
+  width: 50px;
+  border: 2px solid #ededed;
+  text-align: center;
+  line-height: 46px;
+  display: block;
+  font-weight: 700;
+  color: black;
+  /* text-decoration: none; */
+}
+.pagination-area ul li:hover a {
+  color: white;
+  background: #80b500;
+  border-color: #80b500;
+}
+.pagination-area ul .active a{
+  color: white;
+  background: #80b500;
+  border-color: #80b500;
+
+}
+/* ------products shop css start----- */
+
+
+
+
+
+
+
+
+/* -------------------------product page css start-------------------------- */
+
+
+.product-buy{
+  padding-bottom: 80px;
+  margin: 0 62.33px;
+  display: flex;
+}
+.product-img-set{
+  padding: 0 12px;
+  margin-bottom: 35px;
+  width: 50%;
+  background: white;
+
+}
+.large-img {
+  margin-bottom: 15px;
+} 
+ .product-zoom{
+  border: 2px solid #f6f6f6;
+    margin: 0!important;
+}
+.product-zoom img{
+  cursor: crosshair;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.small-img{
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.small-img .product-small{
+  padding: 0 5px;
+}
+.small-img .product-small img{
+  border: 1px solid #f6f6f6;
+}
+.small-img img{
+  height: 100%;
+  width: 100%;
+}
+.product-zoom{
+  position: relative;
+}
+.small-img .product-small.slick-current img{
+  border: 1px solid #80b500;
+  margin-bottom: 10px;
+} 
+/* --product-info-- */
+.product-buy-info{
+  padding: 0 12px 0 37px;
+}
+.product-buy-info h3{
+  padding: 35px;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: 'Rajdhani';
+    padding: 5px;
+    color: black;
+}
+.product-buy .product-price-dec{
+  color: #80b500;
+  margin-bottom: 10px;
+  line-height: 1.2rem;
+  padding: 5px;
+}
+.product-price-dec #product-price .money{
+  font-size: 35px;
+  font-weight:500;
+}
+.product-price-dec #product-price del{
+  font-size: 26px;
+  opacity: 0.6;
+  margin-left: 5px;
+  font-weight: 400;
+}
+.product-price-dec .price-lable{
+  font-size: 14px;
+  background: #f1f1f1;
+  padding: 3px 5px;
+  margin-left: 15px;
+  border-radius: 3px;
+  color: #071c1f;
+}
+
+.product-brief p{
+  line-height: 1.5;
+  text-decoration: none;
+}
+.product-details1 ul li{
+  list-style: none;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.product-details1 ul li strong{
+  color: #071c1f;
+  margin-right:5px;
+  font-weight: 600;
+  min-width: 100px;
+  display: inline-block;  
+}
+.product-details1 .availabl-span{
+  color: #80b500;
+}
+.product-buy-info .product-details1 ul li{
+  display: flex;
+}
+hr{
+  margin: 1rem 0;
+  opacity: .25;
+}
+.product-details2 .switch{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.switch .header{
+  line-height: 1;
+  margin-right: 5px;
+  min-width: 100px;
+  font-weight: 500;
+}
+.switch input{
+  display: none;
+}
+.product-size label{
+  font-size: 13px;
+  font-weight: 400;
+  padding: 3px 10px;
+  margin-right: 10px;
+  line-height: 1;
+  text-transform: capitalize;
+  background: #f2f6f7;
+}
+ .product-color label{
+  height: 20px;
+  width: 30px;
+  margin-right: 10px;
+  border: 1px solid #e5e5e5;
+  display: inline-block;
+}
+.product-size label:hover , .product-size input:checked+label{
+  color: white;
+  background: #80b500;
+}
+.product-color label:hover , .product-color input:checked+label{
+  border: 2px solid #80b500;
+}
+.product-buy-info .product-details3 ul li{
+  display: flex;
+  margin-bottom: 1rem;
+  margin-right: 10px;
+  list-style: none;
+  margin-top: 10px;
+
+}
+.product-details3 ul li div{
+  margin: 10px 10px 0 0;
+}
+.sold-out button{
+  padding: 16px 22px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Rajdhani';
+  text-align: center;
+  transition: all .3s ease 0s;
+  border: none;
+  border-radius: 0;
+  opacity: 0.65;
+  background: #80b500 !important;
+  color: rgb(196, 214, 193)!important;
+  cursor: not-allowed;
+}
+.buy-now button{
+  padding: 18.5px 35px;
+  border: none;
+  border-radius: 0;
+  color: white;
+  font-weight: 600;
+  background: gray;
+  cursor: not-allowed;
+}
+.product-details4 ul li{
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.product-details4 ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+.product-social-media ul li{
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+.product-details4 ul li a:hover , .product-social-media ul li a:hover{
+  color: #80b500;
+  transition: all 0.2s;
+}
+.product-payment h5{
+  margin-bottom: 15px;
+  font-family: 'Rajdhani';
+  font-size: 20px;
+  line-height: 1.2;
+}
+.payment-method{
+  display: flex;
+  align-items: center;
+}
+.payment-method a img{
+  height: 55px;
+  width: 120px;
+}
+.payment-method img{
+  padding: 5px;
+  max-width: 100%;
+    vertical-align: middle;
+    height: 45px;
+    width: 50px;
+}
+.product-dec{
+  margin: 0 62.33px;
+  padding: 0 12px;
+}
+.pro-nav{
+  border-bottom: 2px solid #e5e5e5;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pro-nav p.active{
+  color: #80b500;
+  background: transparent;
+  border-bottom: 2px solid #80b500;
+  padding: 20px 0;
+  margin-right: 50px;
+  text-align: left;
+  position: relative;
+  font-weight: 700;
+  font-size: 17px;
+  cursor: pointer;
+}
+.pro-nav p{
+  padding: 20px 0;
+  margin-right: 50px;
+  text-align: left;
+  position: relative;
+  color: #071c1f;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.tab-content1{
+  display: none;
+}
+.tab-content1.active{
+  display: block;
+  /* height: auto;
+  visibility: visible;
+  opacity: 1;
+  overflow: visible; */
+}
+.tab-content1{
+  background: transparent;
+  padding: 30px 0 0 0;
+}
+.tab-content1 p{
+  margin-bottom: 16px;
+  display: block;
+  line-height: 1.6;
+}
+.pro-tab-content>#review{
+  margin-top: 30px;
+  padding: 24px;
+  border: 2px solid #ececec;
+}
+
+#review h2{
+  font-family: 'Rajdhani';
+  width: 100%;
+  font-size: 24px;
+  /* margin: 0 0 12px 0; */
+  /* line-height: 1.2; */
+}
+.rev-summary{
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  width: 100%;
+}
+.noreviw{
+  text-decoration: underline;
+}
+.noreviw:hover{
+  color: #80b500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+
+/* --related-product css start */
+.slider5{
+  display: flex;
+  gap: 25px;
+}
+.slider5 .ltn-product-item{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* -------------------------product page css end-------------------------- */
+
+
+/* -------------------------blog page css start-------------------------- */
+
+.blog-area{
+  margin: 90px 62.33px 100px 62.33px;
+  display: flex;
+}
+.blog-side-area , .blog-main-area{
+  padding: 0 12px;
+}
+.blog-side-area{
+  width: 31.5%;
+}
+
+.widget{
+  margin-bottom: 40px;
+  padding: 35px 30px 40px 35px;
+  border: 2px solid #e5e5e5;
+}
+.widget input[type = search]{
+  background: white;
+  border: 2px solid #e5e5e5;
+  height: 65px;
+  box-shadow: none;
+  padding-left: 20px;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+  padding-right: 40px;
+}
+.search-blog button{
+  position: absolute;
+  height: 65px;
+  left: 27%;
+  background: #80b500;
+  padding: 0 20px;
+  border: 1px solid #80b500;
+}
+.search-blog button:hover{
+  background: #071c1f;
+  border: 1px solid #071c1f;
+
+} 
+.search-blog button i{
+  color: white;
+  font-size: 17px;
+}
+.recent-post-blog .post-widget-item{
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  
+}
+.post-widget-brief {
+  flex: 1; /* Remaining space fill karva */
+  display: flex;
+  flex-direction: column; /* Title and Date vertically stack karva */
+  justify-content: center;
+}
+.post-widget-item img{
+  width: 80px;
+  float: left;
+  margin-right: 20px;
+}
+
+.post-widget-item .post-widget-brief h6{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Rajdhani';
+  padding-bottom: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: none
+}
+h6 a{
+  text-decoration: none;
+  font-size: 16px;
+}
+.post-widget-brief .blog-page-meta-btn {
+  margin-bottom: 0;
+}
+ .blog-page-meta-btn .blog-page-date{
+  color: #80b500;
+  margin-left:5px;
+  font-size: 15px;
+  font-family: 'Rajdhani';
+}
+.recent-post-blog .lastchild{
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.blog-side-area .archive-blog .archive-time{
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+.archive-blog ul{
+  padding-left: 18px;
+}
+.archive-blog ul li {
+  list-style: disc;
+  padding-top: 15px;
+  cursor: pointer;
+  display: list-item;
+}
+.archive-blog ul li a:hover ,.archive-blog ul li:hover{
+  color: #80b500;
+}
+.archive-blog ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 1.5;
+}
+.blog-side-area .tag-blog ul li{
+  list-style: none;
+    display: inline-block;
+    margin: 5px 3px;
+}
+.blog-side-area .tag-blog ul li a{
+  display: block;
+  padding: 8px 12px 6px;
+  color: black;
+  background: #ececec;
+  text-transform: uppercase;
+  font-family: 'Rajdhani';
+  font-size: 13px;
+}
+.blog-side-area .tag-blog ul li a:hover{
+  color: white;
+  background: #80b500;
+}
+.blog-main-area{
+  /* display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding: 0 12px; */
+}
+.blog-main-area .blog-item{
+  width: 100%;
+}
+.blog-item .blog-brief .user a{
+  margin-right: 30px;
+}
+.blog-brief p{
+  text-decoration: none;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.blog-main-area .blog-item{
+  margin-bottom: 50px;
+}
+
+/* -------------------------blog page css end-------------------------- */
+
+
+/* -------------------------contact page css start-------------------------- */
+
+/* address area start */
+.conatact-address-area{
+  margin: 0 62.33px 90px 62.33px;
+  display: flex;
+}
+.conatact-address-area .conatact-item-area{
+  padding: 0 12px;
+  width: 33%;
+  position: relative;
+}
+.conatact-item-area .contact-address-item{
+  border: 2px solid #e5e5e5;
+  text-align: center;
+  padding: 50px 30px 25px 30px;
+  width: 82%;
+}
+.contact-address-item .contact-image{
+  margin-bottom: 35px;
+}
+.contact-address-item h3{
+  font-family: 'Rajdhani';
+  font-size: 25px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.contact-address-item p{
+  margin-bottom: 16px;
+  font-size: 17px;
+  display: block;
+  line-height: 1.5;
+}
+/* address area end */
+
+/* contact-form start */
+.contact-form-area{
+  margin: 0 62.33px;
+}
+.container{
+  padding: 0 12px;
+}
+.contact-form-box{
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 40px 50px 50px 50px;
+  z-index: 1;
+}
+.contact-form-box h4{
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: 'Rajdhani';
+
+}
+.contact-form-box .contact-form .top-details{
+  width: calc(50% - 10px); 
+}
+.contact-form{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+input[type=text],input[type=email],type[type=submit],textarea,select{
+  width: 100%;
+  height: 65px;
+  border: 2px solid #e5e5e5;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #071c1f;
+  margin-bottom: 30px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+.input-item{
+  position: relative;
+  
+}
+input:focus-visible, textarea:focus-visible, select:focus-visible{
+  border: 1px solid #80b500;
+  outline: 0;
+}
+.ltn__custom-icon:before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f063";
+  font-weight: 900;
+}
+.input-item.ltn__custom-icon:before{
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  right: 20px;
+  color: #80b500;
+}
+.name.ltn__custom-icon:before{
+  content: "\f007";
+}
+.input-item:after{
+  display: block;
+  clear: both;
+  content: "";
+}
+.email.ltn__custom-icon:before{
+  content: "\f0e0";
+}
+.phone-number.ltn__custom-icon:before{
+  content: "\f095";
+}
+.text-area.ltn__custom-icon:before{
+  content: "\f303";
+  top: 30px;
+}
+/* .input-item select:before{
+  content: "\f063";
+  font-size: 14px;
+  position: relative;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #80b500;
+} */
+.input-item-email.ltn__custom-icon:before{
+  content: "\f0e0";
+}
+.input-item .drop-down{
+  border: 2px solid #e5e5e5;
+  height: 65px;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #071c1f;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-right: 40px;
+}
+.input-item select{
+  /* -moz-appearance: none; */
+  appearance: none;
+}
+textarea{
+  resize: vertical;
+  padding: 15px 20px;
+  min-height: 150px;
+}
+.custom-textarea{
+  margin-bottom: 30px;
+}
+.contact-form-box button{
+  display: inline-block;
+  font-size: 16px;
+  padding: 17px 40px;
+  background: #80b500;
+  color: white;
+  font-family: 'Rajdhani';
+  width: 500;
+  border-radius: 0;
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px solid #80b500;
+}
+/* contact-form end */
+.map{
+  height: 600px;
+  width: 100%;
+  padding-top: 90px;
+}
+/* -------------------------contact page css end-------------------------- */
+
+
+/* -------------------------about page css start-------------------------- */
+.about-us-area{
+  padding-bottom: 97px;
+  margin: 0 62.33px;
+  display: flex;
+  
+}
+.about-us-img{
+  width: 50%;
+  padding: 0 12px;
+  margin-right: 30px;
+}
+.about-us-img img{
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  height: auto;
+}
+.about-us-img-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Rajdhani';
+  width: 150px;
+  height: 150px;
+  background: #80b500;
+  border: 15px solid #eee;
+  position: absolute;
+  left: 426px;
+  top: 159%;
+}
+.about-us-img-info .dots-bottom{
+  height: 25px;
+  width: 25px;
+  background: #80b500;
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  left: 12px;
+}
+/* .about-us-area .about-us-img-info-2 .about-us-img-info-inner h5{
+  font-size: 50px;
+  color: white;
+  line-height: 0.8;
+} */
+ .about-us-img-info-inner h5{
+  font-size: 50px;
+  color: white;
+  line-height: 0.8;
+ }
+
+.about-des-area{
+  width: 50%;
+  padding: 12px;
+  margin-top: 45px;
+}
+.about-des-area .sec-title2{
+  margin-bottom: 40px;
+  text-align: left;
+}
+.sec-title2 p{
+  padding-left: 30px;
+  margin-bottom: 16px;
+  border-left: 2px solid #80b500 ;
+  max-width: 400px;
+  line-height: 1.5;
+}
+.about-des-area p{
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* feture area start */
+
+.fetures-area{
+  padding: 115px 62.33px 90px 62.33px;
+  background-color: #f7f5eb;
+  
+}
+
+.section-title  span{
+  color: #80b500;
+}
+.feture-item-container{
+  display: flex;
+  justify-content: center;
+}
+.feture-item-container .feture-item{
+  width: 31%;
+}
+.feture-item{
+  background: white;
+  padding: 38px 30px 30px 30px;
+  margin: 12px;
+}
+.feture-item-container:last-child{
+  margin-right: 0;
+}
+.feture-item .icon-title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.icon-title .img{
+  color: #80b500;
+  font-size: 60px;
+  line-height: 1;
+}
+.icon-title h3{
+  font-family: 'Rajdhani';
+  font-size: 23px;
+  margin-left: 10px;
+}
+.icon-title h3:hover{
+  color: #80b500;
+  transition: all 0.2s ease;
+}
+.feture-info p{
+  line-height: 1.5;
+}
+/* feture area end */
+
+/* team member area start*/
+.team-area{
+  padding-top: 115px;
+  padding-bottom: 90px;
+  margin: 0 42px;
+}
+.team-member-area{
+  display: flex;
+  justify-content: center;
+}
+.team-item{
+  margin-bottom: 30px;
+  transition: 0.3s;
+  padding: 45px 10px 25px;
+  /* box-shadow: 0 16px 32px 0 rgba(7, 28, 31, 0.1); */
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    border: 0;
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+.team-image{
+  max-width: 200px;
+  margin: 0 25px;
+  box-sizing: border-box;
+  padding: 24px;
+  
+}
+.team-image img{
+  border-radius: 100%;
+  width: 100%;
+  display: block;
+}
+.team-info{
+  margin-top: 30px;
+}
+.team-info h6{
+  color: #80b500;
+  font-family: 'Rajdhani';
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.team-info h4{
+  font-size: 20px;
+  font-family: 'Rajdhani';
+  font-weight: 500;
+}
+.team-item:hover{
+  background: #071c1f;
+  color: white;
+  transition: .04s;
+}
+/* team member area end*/
+
+
+/* -------------------------about page css end-------------------------- */
+
+
+/* -------------------------account page css start-------------------------- */
+
+.login{
+  margin:0 62.33px 100px 62.33px;
+
+}
+.login-area{
+  margin:0 285px;
+  padding: 12px;
+}
+.customer-login{
+  display: block;
+}
+.create-form{
+  display: none;
+}
+.login-head{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login-head h2{
+  font-family: 'Rajdhani';
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 32px;
+}
+.login-head p{
+  color: #666666;
+}
+.form-btn{
+  background: #80b500;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 17px 40px;
+  border: none;
+  color: white;
+}
+.form-btn:hover{
+  background: #071c1f;
+  color: white;
+}
+.form-action-button a{
+  float: right;
+  margin-top: 7px;
+  color: #333;
+  text-decoration: none;
+  transition: all .3s ease 0s;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.account-creat{
+  margin-top: 20px;
+}
+.account-creat a{
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all.3s ease 0s;
+  cursor: pointer;
+}
+.recover-password-form{
+  display: none;
+}
+.account-action {
+  margin-top:20px;
+  cursor: pointer;
+}
+/* -------------------------account page css end-------------------------- */
