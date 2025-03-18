@@ -28,7 +28,7 @@ btns.forEach(btn =>{
 
 // start mobile header
 var closeBtn = document.querySelector(".close-button");
-var toggleBtn = document.querySelector(".mobile-menu-toggle");
+var toggleBtn = document.querySelector(".mobile-menu-toggle-cart-icon");
 var sideBar = document.querySelector(".mobile-head-menu");
 
 toggleBtn.addEventListener("click",()=>{
